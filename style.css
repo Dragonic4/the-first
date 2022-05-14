@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+}
+html, body{
+    height: 100%;
+    font-family: 'roboto' , sans-serif;
+    -webkit-font-smoothing: atialiased;
+}
+main{
+    background: url(img/foto2.jpg);
+    height: 512px;
+    width: 375px;
+}
+.container{
+    max-width: 250px;
+    margin-left: 50px;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 0px;
+}
+body {
+    display: grid;
+    place-items: center;
+    --grey: hsl(123,34,45)
+}
+.avatar{
+    width: 1rem;
+    margin-top: 50px;
+    margin-left: 60px;
+    position: relative;
+}
+.avatar > img{
+    width: 10rem;
+    height: 15rem;
+    object-fit:cover;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+.avatar span{
+    position: absolute;
+    left: -15px;
+    top: 10px;
+    z-index: 1;
+}
+h1{
+    font-size: 1.5rem;
+    color: --var(--grey)
+    text-align: center;
+    margin-top: 1rem;
+}
+a {
+    color: aqua;
+    text-align: center;
+    margin-top: 0.25rem;
+}
+
+a.button{
+    background-color: hsl(20, 36%, 57%);
+}
+ul{
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
